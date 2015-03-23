@@ -13,7 +13,8 @@ DOWNLOAD
 ========
 * A demo running on Google's App Engine (GAE) can be found here:
   https://crococrypt-querl.appspot.com
-  ==> GAE limits the files to be uploaded to 1MB(!). The file database will be cleared occasionally.
+  ==> GAE limits the files to be uploaded to 1MB(!).
+  ==> The file database will be cleared occasionally.
   ==> Crypto seems to be working slowly on GAE, so be patient! ;-)
 
 * For a standalone binary package using Jetty 9 go to the release tab:
