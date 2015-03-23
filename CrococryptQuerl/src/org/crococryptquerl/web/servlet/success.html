@@ -1,0 +1,74 @@
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+<link rel="stylesheet" href="/res/all.css" type="text/css"/>
+<link rel="icon" type="image/png" href="/res/shortcut.png"/>
+<link rel="shortcut icon" href="/favicon.ico"/>
+<title>CrococryptQuerl: Secure File Exchange</title>
+</head>
+<body style="background: url('/res/back2.png'); overflow:hidden;">
+
+<div id="content">
+
+<div id="wrap" style="text-align: center; ">
+
+<div style="border: 1px solid lightgray; text-align: left; display: inline-block;background: #73ADE8; padding: 10px;">
+<h1>Upload complete!</h1>
+<p>Your encrypted file upload was successful.
+<br/>
+There a two ways to download your file again:
+</p>
+
+<h2>1 - Direct Link</h2>
+<p>
+Copy &amp; Paste:
+<br/>
+<a href="/direct/###val###">The DirectLink</a>
+<br/>
+OR
+<br/>
+<input id="directlink" onclick="javascript:this.select();" style="width: 100%;" type="text" />
+</p>
+
+<h2>2 - Identifier String</h2>
+
+<p>
+Copy &amp; Paste:
+<br/>
+<input onclick="javascript:this.select();" style="width: 100%;"  type="text" value="###val###"/>
+<br/>AND go to the
+<br/>
+<a href="/download">Download page</a>
+</p>
+
+<p style="text-align: center; margin-top: 50px;">
+<input type="button" onclick="window.location.href='/';" value="Next" style="min-width: 100px; height: 50px; font-size: 1.2em;" />
+</p>
+</div>
+
+<div id="footer">
+<span class="footertext">
+DEMO
+ | 
+<a href="https://github.com/fhissen/CrococryptQuerl" target="_blank">About</a>
+</span>
+</div>
+
+</div>
+</div>
+
+<script type="text/javascript">
+var url = window.location.href;
+var tmp = url.split("/");
+var url_main = tmp[0] + "//" + tmp[2];
+
+var val = "###val###";
+
+document.getElementById("directlink").value = url_main + "/direct/" + val;
+
+</script>
+
+</body>
+</html>
